@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Personal homepage of Shourav Saha, a Software Engineer & Devoloper.">
+    <meta name="author" content="Shourav Saha">
+    <title>Shourav Saha | Personal Homepage</title>
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        .assignment-note {
+            border-left: 3px solid var(--gold);
+            padding-left: 0.85rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="page-orb orb-one" aria-hidden="true"></div>
+    <div class="page-orb orb-two" aria-hidden="true"></div>
+    <div class="page-orb orb-three" aria-hidden="true"></div>
+
+    <header class="site-header">
+        <nav class="navbar" aria-label="Primary navigation">
+            <a class="brand" href="index.html" aria-label="Shourav Saha homepage">
+                <img class="brand-logo" src="images/Logo_idea_2.png" alt="Code Baba logo">
+                <span class="brand-text">
+                    <span class="brand-name">SHOURAV SAHA</span>
+                    <span class="brand-subtitle">CS Student &amp; Developer</span>
+                </span>
+            </a>
+
+            <div class="nav-links">
+                <a href="#about"><span>01</span> About</a>
+                <a href="#records"><span>02</span> Education</a>
+                <a href="#skills"><span>03</span> Skills</a>
+                <a href="#hobbies"><span>04</span> Hobbies</a>
+                <a href="#links"><span>05</span> Links</a>
+                <a href="#contact"><span>06</span> Contact</a>
+                <a href="projects.html"><span>07</span> Project</a>
+                <a href="hobbies.html"><span>08</span> Hobby Page</a>
+            </div>
+
+            <button class="theme-toggle" id="themeToggle" type="button" aria-label="Switch to dark mode" aria-pressed="false">
+                <span class="toggle-label toggle-light">☀</span>
+                <span class="toggle-label toggle-dark">☾</span>
+                <span class="toggle-switch" aria-hidden="true"><span class="toggle-thumb"></span></span>
+            </button>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero glass-panel" id="home">
+            <div class="hero-copy">
+                <p class="eyebrow" style="letter-spacing: 0.34em;">HELLO, I’M</p>
+                <h1>Shourav Saha</h1>
+                <p class="hero-subtitle">A Software Engineer & Devoloper</p>
+                <p class="hero-text">
+                    I am just Curious about Every Visible & Non-Visible Thing 
+                </p>
+
+                <div class="hero-actions">
+                    <a class="btn btn-primary" href="#about"> Explore Profile</a>
+                    <a class="btn btn-secondary" href="https://github.com/ShouravSaha573" target="_blank" rel="noopener noreferrer">View GitHub</a>
+                </div>
+            </div>
+
+            <div class="portrait-card">
+                <!-- Replace images/profile.jpg with your own photo if needed. -->
+                <img src="images/profile.jpg" alt="Shourav Saha standing outdoors wearing sunglasses" class="profile-image">
+            </div>
+        </section>
+
+        <section class="section-grid" aria-label="Profile overview cards">
+            <article class="glass-card about-card" id="about">
+                <div class="section-heading">
+                    <span class="section-icon">♙</span>
+                    <h2>About Me</h2>
+                </div>
+                <p>
+                    I am Shourav Saha, A Software Engineer & Devoloper. I studied on Computer Science from <a href="https://www.bracu.ac.bd" target="_blank" rel="noopener noreferrer">BRAC University</a>.
+                    I enjoy turning curiosity into practical work: learning new technologies, building clean web
+                    interfaces, solving programming problems, and improving the small details that make a digital
+                    experience feel polished.
+                </p>
+                <p>
+                    My current focus is strengthening my foundation in software engineering, full-stack development,
+                    databases, and user-friendly design. I like projects where logic and creativity meet, because
+                    those are the places where code starts feeling alive.
+                </p>
+                <div class="about-highlights">
+                    <span>Problem Solver</span>
+                    <span>Web Developer</span>
+                    <span>Creative Thinker</span>
+                    <span>Continuous Learner</span>
+                </div>
+                <div class="about-details">
+                    <div class="info-list">
+                        <p><span>Birth Date</span><strong>19 January 2003</strong></p>
+                        <p><span>Age</span><strong id="ageValue">Calculating...</strong></p>
+                        <p><span>Location</span><strong>Narayanganj</strong></p>
+                        <p><span>Program</span><strong>Computer Science</strong></p>
+                        <p><span>University</span><strong>BRAC University</strong></p>
+                    </div>
+                    <figure class="about-image-frame">
+                        <img src="images/about-me-art.png" alt="Anime artwork used as a visual accent for About Me">
+                    </figure>
+                </div>
+            </article>
+
+            <article class="glass-card skills-card" id="skills">
+                <div class="section-heading">
+                    <span class="section-icon">⌘</span>
+                    <h2>Technical Skills</h2>
+                </div>
+                <div class="skills-list skill-cloud">
+                    <span>HTML</span>
+                    <span>CSS</span>
+                    <span>JavaScript</span>
+                    <span>Python</span>
+                    <span>C Programming</span>
+                    <span>MERN Stack</span>
+                    <span>SQL</span>
+                    <span>Flask</span>
+                    <span>Django</span>
+                    <span>Php</span>
+                </div>
+                <figure class="skills-image-frame">
+                    <img src="images/technical-skills-art.png" alt="Anime artwork used as a visual accent for technical skills">
+                </figure>
+            </article>
+        </section>
+
+        <section class="lower-grid" aria-label="Interests and resources">
+            <article class="glass-card quote-card">
+                <div class="section-heading">
+                    <span class="section-icon">❝</span>
+                    <h2>Favorite Quote</h2>
+                </div>
+                <div class="quote-layout">
+                    <blockquote>
+                        “Knowing what it feels like to be in pain is exactly why we try to be kind to others. That's what makes us human.”
+                        <cite>— Jiraiya, Naruto</cite>
+                    </blockquote>
+                    <img src="images/jiraiya-quote.jpg" alt="Anime scene representing Jiraiya from Naruto" class="quote-image">
+                </div>
+            </article>
+
+            <article class="glass-card hobbies-card" id="hobbies">
+                <div class="section-heading split-heading">
+                    <span class="section-icon">✦</span>
+                    <h2>Hobbies &amp; Interests</h2>
+                </div>
+                <div class="hobby-grid">
+                    <a class="hobby-tile" href="hobbies.html#photography"><span>📷</span>Photography</a>
+                    <a class="hobby-tile" href="hobbies.html#gaming"><span>🎮</span>Gaming</a>
+                    <a class="hobby-tile" href="hobbies.html#art"><span>✎</span>Art / Sketch</a>
+                    <a class="hobby-tile" href="hobbies.html#perfume"><span>◈</span>Perfume Collector</a>
+                </div>
+            </article>
+
+            <article class="glass-card links-card" id="links">
+                <div class="section-heading">
+                    <span class="section-icon">⌁</span>
+                    <h2>Useful Links</h2>
+                </div>
+                <div class="link-grid">
+                    <a href="https://github.com/ShouravSaha573" target="_blank" rel="noopener noreferrer">GitHub</a>
+                    <a href="https://www.facebook.com/share/1DBiBDQ3cE/?mibextid=wwXIfr" target="_blank" rel="noopener noreferrer">Facebook</a>
+                    <a href="https://www.instagram.com/hellloimshourav?fbclid=IwY2xjawSs0B5leHRuA2FlbQIxMABicmlkETJLM3lOSmNDYjJlQzNCYnlvc3J0YwZhcHBfaWQQMjIyMDM5MTc4ODIwMDg5MgABHr4ptI4_cAvpyyHh2bx6i6ji7G7EO6tC4wzPtrd749naiUB0PywQpki_5zWV_aem_Ws2Gdy-2KAQ9wRlI4CpxEw" target="_blank" rel="noopener noreferrer">Instagram</a>
+                    <a href="https://www.bracu.ac.bd" target="_blank" rel="noopener noreferrer">BRAC University</a>
+                    <a href="https://discord.gg/MAWTKbaTu" target="_blank" rel="noopener noreferrer">CSE 391 Discord</a>
+                    <a href="https://wa.me/8801842822879" target="_blank" rel="noopener noreferrer">WhatsApp</a>
+                    <a href="projects.html">Project</a>
+                    <a class="logo-link" href="https://www.facebook.com/share/1CwSQUXZjJ/?mibextid=wwXIfr" target="_blank" rel="noopener noreferrer"><img src="images/Logo_idea_2.png" alt="Code Baba logo"> Code Baba</a>
+                </div>
+            </article>
+
+            <article class="glass-card favorites-card" id="favorites">
+                <div class="section-heading split-heading">
+                    <span class="section-icon">★</span>
+                    <h2>Favorite Picks</h2>
+                    <a href="hobbies.html">More Interests ›</a>
+                </div>
+                <div class="favorites-layout">
+                    <div class="favorite-lists">
+                        <div class="favorite-list">
+                            <h3>Favorite Series</h3>
+                            <ol>
+                                <li>Breaking Bad</li>
+                                <li>Guardian: The Lonely and Great God</li>
+                                <li>Money Heist</li>
+                            </ol>
+                        </div>
+                        <div class="favorite-list">
+                            <h3>Favorite Anime</h3>
+                            <ol>
+                                <li>Naruto</li>
+                                <li>Bleach</li>
+                                <li>One Piece</li>
+                                <li>Death Note</li>
+                            </ol>
+                        </div>
+                        <div class="favorite-list">
+                            <h3>Favorite Book</h3>
+                            <ol>
+                                <li>Misir Ali by Humayun Ahmed</li>
+                            </ol>
+                        </div>
+                    </div>
+
+                    <div class="poster-grid">
+                        <figure><img src="images/breaking-bad.jpg" alt="Breaking Bad poster"><figcaption>Breaking Bad</figcaption></figure>
+                        <figure><img src="images/guardian-goblin.jpg" alt="Guardian The Lonely and Great God poster"><figcaption>Guardian</figcaption></figure>
+                        <figure><img src="images/money-heist.jpg" alt="Money Heist poster"><figcaption>Money Heist</figcaption></figure>
+                        <figure><img src="images/naruto.jpg" alt="Naruto poster"><figcaption>Naruto</figcaption></figure>
+                        <figure><img src="images/bleach.jpg" alt="Bleach poster"><figcaption>Bleach</figcaption></figure>
+                        <figure><img src="images/one-piece.jpg" alt="One Piece poster"><figcaption>One Piece</figcaption></figure>
+                        <figure><img src="images/death-note.jpg" alt="Death Note poster"><figcaption>Death Note</figcaption></figure>
+                        <figure><img src="images/misir-ali.jpg" alt="Misir Ali book cover by Humayun Ahmed"><figcaption>Misir Ali</figcaption></figure>
+                    </div>
+                </div>
+            </article>
+        </section>
+
+        <section class="glass-card records-card" id="records">
+            <div class="section-heading">
+                <span class="section-icon">☷</span>
+                <h2>Academic Records</h2>
+            </div>
+            <div class="table-wrapper">
+                <table>
+                    <caption>Structured academic journey of Shourav Saha</caption>
+                    <thead>
+                        <tr>
+                            <th>Level</th>
+                            <th>Institution</th>
+                            <th>Location</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>School</td>
+                            <td>Narayanganj Ideal School</td>
+                            <td>Narayanganj</td>
+                        </tr>
+                        <tr>
+                            <td>College</td>
+                            <td>Narayanganj Tolaram College</td>
+                            <td>Narayanganj</td>
+                        </tr>
+                        <tr>
+                            <td>University</td>
+                            <td>BRAC University</td>
+                            <td>Dhaka</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <section class="contact-section glass-panel" id="contact">
+            <div>
+                <p class="eyebrow">CONTACT</p>
+                <h2>Send Me an Email</h2>
+                <p>
+                    Use this private contact form to send a message directly to my inbox
+                </p>
+                <div class="contact-links compact-links">
+                    <a href="https://wa.me/8801842822879" target="_blank" rel="noopener noreferrer">WhatsApp Chat</a>
+                    <span>Narayanganj, Bangladesh</span>
+                </div>
+            </div>
+
+            <form class="contact-form" id="contactForm" action="https://api.web3forms.com/submit" method="post">
+                <input type="hidden" name="access_key" value="YOUR_WEB3FORMS_ACCESS_KEY_HERE">
+                <input type="hidden" name="subject" value="New message from Shourav Saha portfolio">
+                <input type="checkbox" name="botcheck" class="hidden-field" tabindex="-1">
+
+                <label for="senderEmail">From</label>
+                <input type="email" id="senderEmail" name="email" placeholder="sender@example.com" required>
+
+                <label for="visitorMessage">Message</label>
+                <textarea id="visitorMessage" name="message" rows="5" placeholder="Write your message here" required></textarea>
+
+                <button class="btn btn-primary" type="submit">Send Email</button>
+                <p class="form-status" id="formStatus" aria-live="polite"></p>
+            </form>
+        </section>
+    </main>
+<script src="script.js"></script>
+</body>
+</html>
